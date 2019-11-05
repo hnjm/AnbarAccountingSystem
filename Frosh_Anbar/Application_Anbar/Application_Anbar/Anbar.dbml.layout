@@ -1,0 +1,167 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 13.625, 8.5" name="Anbar">
+  <DataContextMoniker Name="/AnbarDataContext" />
+  <nestedChildShapes>
+    <classShape Id="f9c2f42d-2ce6-48ff-b742-7c0239f60516" absoluteBounds="5.75, 0.5, 2, 1.26050048828125">
+      <DataClassMoniker Name="/AnbarDataContext/Category" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f8ad76c5-eb46-4e56-92bf-151023f84bba" absoluteBounds="5.765, 0.96, 1.9700000000000002, 0.70050048828125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="e5b17269-d663-4daa-ba51-ab0ba97904d2" absoluteBounds="3.125, 5.375, 2, 2.24658447265625">
+      <DataClassMoniker Name="/AnbarDataContext/Customer" />
+      <nestedChildShapes>
+        <elementListCompartment Id="77db42d5-4feb-43f1-8278-fc89611ede5f" absoluteBounds="3.1400000000000006, 5.8350000000000009, 1.9700000000000002, 1.68658447265625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="098e21fa-a5e1-49ff-ac2f-1845e3f3226b" absoluteBounds="11.125, 0.625, 2, 1.5891951497395831">
+      <DataClassMoniker Name="/AnbarDataContext/ViewRequestProduct" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ed575f69-535e-4f71-8bb3-41b5b9e8c36b" absoluteBounds="11.14, 1.085, 1.9700000000000002, 1.0291951497395833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="2ab7e59b-546f-4518-b5ef-0ba897632b43" absoluteBounds="5.875, 5.375, 2, 2.24658447265625">
+      <DataClassMoniker Name="/AnbarDataContext/Seller" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e047f2c0-a178-4c45-9c58-f709679d2c5a" absoluteBounds="5.8900000000000006, 5.835, 1.9700000000000002, 1.68658447265625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="2c8e9ecc-e846-4622-8653-04d934158522" absoluteBounds="8.375, 0.5, 2, 1.5891951497395831">
+      <DataClassMoniker Name="/AnbarDataContext/EnterDetail" />
+      <nestedChildShapes>
+        <elementListCompartment Id="9aa248de-d4dc-4668-b322-b7277f698d76" absoluteBounds="8.39, 0.96, 1.9700000000000002, 1.0291951497395833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="ee3464c4-6a1a-44b3-9bc7-9134a3fc2188" absoluteBounds="8.5, 2.625, 2, 1.4248478190104168">
+      <DataClassMoniker Name="/AnbarDataContext/EnterDoc" />
+      <nestedChildShapes>
+        <elementListCompartment Id="2e52456b-e006-463e-b416-bd04ce3e2b65" absoluteBounds="8.515, 3.085, 1.9700000000000002, 0.86484781901041674" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(9.4375 : 2.625); (9.4375 : 2.08919514973958)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/AnbarDataContext/EnterDoc/EnterDoc_EnterDetail" />
+      <nodes>
+        <classShapeMoniker Id="ee3464c4-6a1a-44b3-9bc7-9134a3fc2188" />
+        <classShapeMoniker Id="2c8e9ecc-e846-4622-8653-04d934158522" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(7.375 : 5.375); (7.375 : 5.09784057617188); (9 : 5.09784057617188); (9 : 4.04984781901042)]" manuallyRouted="true" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/AnbarDataContext/Seller/Seller_EnterDoc" />
+      <nodes>
+        <classShapeMoniker Id="2ab7e59b-546f-4518-b5ef-0ba897632b43" />
+        <classShapeMoniker Id="ee3464c4-6a1a-44b3-9bc7-9134a3fc2188" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="73205315-2169-4c69-9799-45a07d2af7b2" absoluteBounds="5.75, 2.625, 2, 2.24658447265625">
+      <DataClassMoniker Name="/AnbarDataContext/Product" />
+      <nestedChildShapes>
+        <elementListCompartment Id="996791f6-6943-4eee-a602-f0329247ece8" absoluteBounds="5.7650000000000006, 3.085, 1.9700000000000002, 1.68658447265625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(7.75 : 2.625); (8.375 : 2.08919514973958)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/AnbarDataContext/Product/Product_EnterDetail" />
+      <nodes>
+        <classShapeMoniker Id="73205315-2169-4c69-9799-45a07d2af7b2" />
+        <classShapeMoniker Id="2c8e9ecc-e846-4622-8653-04d934158522" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(6.7187475 : 1.76050048828125); (6.7187475 : 2.625)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/AnbarDataContext/Category/Category_Product" />
+      <nodes>
+        <classShapeMoniker Id="f9c2f42d-2ce6-48ff-b742-7c0239f60516" />
+        <classShapeMoniker Id="73205315-2169-4c69-9799-45a07d2af7b2" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="c46e2a91-1894-4294-b26f-2c6783da07bf" absoluteBounds="3.125, 3.25, 2, 1.4248478190104168">
+      <DataClassMoniker Name="/AnbarDataContext/Order" />
+      <nestedChildShapes>
+        <elementListCompartment Id="891aff60-b5fc-4c19-9bf2-d653fbb376e2" absoluteBounds="3.14, 3.71, 1.9700000000000002, 0.86484781901041674" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(4.125 : 5.375); (4.125 : 4.67484781901042)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/AnbarDataContext/Customer/Customer_Order" />
+      <nodes>
+        <classShapeMoniker Id="e5b17269-d663-4daa-ba51-ab0ba97904d2" />
+        <classShapeMoniker Id="c46e2a91-1894-4294-b26f-2c6783da07bf" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="54024406-f122-4f96-a8ab-3033257b23c2" absoluteBounds="3.125, 0.5, 2, 1.5891951497395831">
+      <DataClassMoniker Name="/AnbarDataContext/OrderDetail" />
+      <nestedChildShapes>
+        <elementListCompartment Id="155e3193-1e12-4787-9e98-9dce75ec0f6e" absoluteBounds="3.1399999999999997, 0.96, 1.9700000000000002, 1.0291951497395833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(4.125 : 3.25); (4.125 : 2.08919514973958)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/AnbarDataContext/Order/Order_OrderDetail" />
+      <nodes>
+        <classShapeMoniker Id="c46e2a91-1894-4294-b26f-2c6783da07bf" />
+        <classShapeMoniker Id="54024406-f122-4f96-a8ab-3033257b23c2" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.75 : 2.625); (5.125 : 2.08919514973958)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/AnbarDataContext/Product/Product_OrderDetail" />
+      <nodes>
+        <classShapeMoniker Id="73205315-2169-4c69-9799-45a07d2af7b2" />
+        <classShapeMoniker Id="54024406-f122-4f96-a8ab-3033257b23c2" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="1c082afd-c455-4327-b3c1-93a47fdc8c61" absoluteBounds="0.5, 5.25, 2, 1.4248478190104168">
+      <DataClassMoniker Name="/AnbarDataContext/CustomerAccount" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a471af57-12e1-402a-9553-98fd3817d409" absoluteBounds="0.51499999999999968, 5.7100000000000009, 1.9700000000000002, 0.86484781901041674" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(3.125 : 4.67484781901042); (2.5 : 5.25)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/AnbarDataContext/Order/Order_CustomerAccount" />
+      <nodes>
+        <classShapeMoniker Id="c46e2a91-1894-4294-b26f-2c6783da07bf" />
+        <classShapeMoniker Id="1c082afd-c455-4327-b3c1-93a47fdc8c61" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="b6d61cca-0707-40ef-9a02-ed4017b8ee7d" absoluteBounds="8.75, 5.625, 2, 1.4248478190104168">
+      <DataClassMoniker Name="/AnbarDataContext/SellerAccount" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ab23c89d-ecc9-4fa1-8158-88a2788fd95c" absoluteBounds="8.765, 6.0850000000000009, 1.9700000000000002, 0.86484781901041674" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(9.8125 : 4.04984781901042); (9.8125 : 5.625)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/AnbarDataContext/EnterDoc/EnterDoc_SellerAccount" />
+      <nodes>
+        <classShapeMoniker Id="ee3464c4-6a1a-44b3-9bc7-9134a3fc2188" />
+        <classShapeMoniker Id="b6d61cca-0707-40ef-9a02-ed4017b8ee7d" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="79b2791c-78f6-4456-8862-52a712f3ebe6" absoluteBounds="0.625, 0.5, 2, 2.0822371419270831">
+      <DataClassMoniker Name="/AnbarDataContext/Cheque" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b9832c62-5de5-4772-8cda-7970063f2088" absoluteBounds="0.64000000000000057, 0.96000000000000085, 1.9700000000000002, 1.5222371419270833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(3.125 : 3.93117140950521); (1.625 : 3.93117140950521); (1.625 : 2.58223714192708)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/AnbarDataContext/Order/Order_Cheque" />
+      <nodes>
+        <classShapeMoniker Id="c46e2a91-1894-4294-b26f-2c6783da07bf" />
+        <classShapeMoniker Id="79b2791c-78f6-4456-8862-52a712f3ebe6" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="45fd1e41-ec81-4f99-aa3f-e47bef500569" absoluteBounds="11.25, 2.375, 2, 2.9039737955729166">
+      <DataClassMoniker Name="/AnbarDataContext/User" />
+      <nestedChildShapes>
+        <elementListCompartment Id="6c0b001d-9ff8-4878-9db9-6020646470a9" absoluteBounds="11.265, 2.835, 1.9700000000000002, 2.3439737955729165" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="e1f93c26-90cd-4461-9b98-88163ac39ebd" absoluteBounds="11.375, 5.5, 2, 1.4248478190104168">
+      <DataClassMoniker Name="/AnbarDataContext/Request" />
+      <nestedChildShapes>
+        <elementListCompartment Id="151c1f0a-5e4d-4d50-aa0b-f05956910da0" absoluteBounds="11.39, 5.96, 1.9700000000000002, 0.86484781901041674" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(6.5625005 : 4.87158447265625); (6.5625005 : 5.25); (7.29166666666667 : 5.25 : JumpStart); (7.45833333333333 : 5.25 : JumpEnd); (9.72916666666667 : 5.25 : JumpStart); (9.89583333333333 : 5.25 : JumpEnd); (11 : 5.25); (11 : 6.21242390950521); (11.375 : 6.21242390950521)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/AnbarDataContext/Product/Product_Request" />
+      <nodes>
+        <classShapeMoniker Id="73205315-2169-4c69-9799-45a07d2af7b2" />
+        <classShapeMoniker Id="e1f93c26-90cd-4461-9b98-88163ac39ebd" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

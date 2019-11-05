@@ -1,0 +1,17 @@
+bin\Debug\Application_Anbar.exe
+bin\Debug\Application_Anbar.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\Application_Anbar.Form1.resources
+obj\Debug\Application_Anbar.Properties.Resources.resources
+obj\Debug\Application_Anbar.csproj.GenerateResource.Cache
+obj\Debug\Application_Anbar.exe
+obj\Debug\Application_Anbar.pdb
+obj\Debug\Application_Anbar.NewProductCode.resources
+obj\Debug\Application_Anbar.Gorfe.resources
+obj\Debug\Application_Anbar.CustomerCode.resources
+obj\Debug\Application_Anbar.SellerCode.resources
+obj\Debug\Application_Anbar.RequestProduct.resources
+obj\Debug\Application_Anbar.EnterDocument.resources
+bin\Debug\Application_Anbar.exe.config
+obj\Debug\Application_Anbar.Test.resources
+obj\Debug\Application_Anbar.Orders.resources
